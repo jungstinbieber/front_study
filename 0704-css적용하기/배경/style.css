@@ -1,0 +1,30 @@
+body{
+  background-color: beige;
+  background-image: url(../../images/gifpepe.gif);
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  /* top bottom center left right center */
+  background-position: center center;
+  height: 3000px;
+  background-attachment: fixed;
+
+  background: skyblue
+  url(../../images/kakaofriends.gif)
+  no-repeat center center fixed;
+
+  background: linear-gradient(to right bottom, blueviolet,pink);
+  background: radial-gradient(circle, skyblue, yellowgreen);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+h1 {
+  background-color: aqua;
+}
+p{
+  background-color: rgb (255,100,25);
+}
+.bg{
+  background-color: rgba(100, 255, 50, 0.3);
+}
+p{
+  background-color: rgb(255,180,2);
+}

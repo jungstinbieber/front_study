@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  border:10px solid red;
+  /* border-style: dotted solid groove; */
+  /* border-radius: 10%; */
+  border-top-left-radius: 10%;
+  border-top-color: blue;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-style: groove;
+  background: wheat;
+  border-bottom: solid green 50px;
+  /* 위 왼 오른 아래 순서 */
+  
+  padding: 20px;
+  margin: 10px;
+
+  width: 350px;
+  height: 300px;
+  
+  box-shadow: inset 2px 4px 5px black;
+
+}
