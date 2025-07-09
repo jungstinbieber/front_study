@@ -1,0 +1,21 @@
+.container{
+  border: 1px solid white;
+  
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 320px 320px;
+  margin: 15px;
+  gap: 10px;
+  text-align: center;
+  
+  
+}
+
+
+.container > div{
+  border: 1px solid black;
+ box-shadow: 0.5px 0.5px 0.5px 0.5px black;
+}
+.container > div > p{
+  text-align: center;
+}

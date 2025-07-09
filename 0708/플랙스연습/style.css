@@ -1,0 +1,27 @@
+.box1{
+  border: 1px solid yellow;
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+
+  display: flex;
+}
+.box2 {
+  border: 1px solid white;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+
+  display: flex;
+  margin: auto;
+
+}
+.box3{
+  border: 1px solid rebeccapurple;
+  width: 200px;
+  height: 200px;
+  background-color: rebeccapurple;
+  display: flex;
+  margin: auto;
+  
+}
