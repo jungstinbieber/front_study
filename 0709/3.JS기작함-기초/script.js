@@ -43,7 +43,7 @@ let name = "홍길동"
 console.log(name+"님의 나이는"+age+"입니다");
 console.log(`${name}님의 나이는 ${age}살입니다`);
 console.log(typeof name);
-
+'${'
 //boolean : true / false
 let check = true;
 console.log(10>=5);
@@ -70,7 +70,7 @@ console.log(x);
 
 //나이를 입력받아 +1을 더한 값을 출력
 // let result =prompt 는 문자열 따라서 형변환은
-// let result = Numer( prompt('나이입력'));
+// let result = Number( prompt('나이입력'));
 // console.log(typeof result);
 // //result=result+1
 // result++;
