@@ -31,15 +31,41 @@ for(let i=0; i<FRUITS.length; i++){
 }
 document.querySelectorAll('.cart');
 
+
+
 for(let i=0; i<cart.length; i++){
   cart[i].addEventListener('click', (e) =>{
+    tamp=JSON.parse(temp);
+      //로컬스토리지에서 써내옴
+   if(localStorage.getItem('cart')!=null){
+    //장바구니에 넣으려는 과일이 로컬스토리지에 있는지 여부를 알려주는 변수
+    let isHave = false;
+    //장바구니에 넣으려는 과일이 로컬스토리지에 있으면
+    //면번째 인덱스에 있는지 알려주는 변수
+
+    temp.forEach((data,i)=>{
+      if(data.nane == name){
+        isHave=true;
+        index=i;
+      }
+    })
+
+    //위반복문에서 기존 로컬스토리지에 해당 과일이 있는지없는지
+    //검사를 끝냈으므로 여부에 따라 다르ㅔ 처리
+    if(isHave){
+      temp[index].cnt++
+    }else{
+      temp.push({'name': name, 'ctn':1});
+    }
+
+  
+    localStorage.setItem('cart', JSON.stringify(temp));
    let nameTag=e.target.previouseElementSibling.previouseElementSibling;
    let name = nameTag.innerHTML;
-
-   if(localStorage.getItem('cart')!=null){
+  
 
    }else {
-    localStorage.setItem('cart',JSON.stringify([name]))
+    localStorage.setItem('cart',JSON.stringify(['name' : name, 'cnt':1]))
    }
   })
 }

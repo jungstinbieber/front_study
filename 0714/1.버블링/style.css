@@ -1,0 +1,13 @@
+*{
+  padding: 10;
+}
+
+div{
+  border: 1px solid red;
+}
+p{
+  border: 1px solid blue;
+}
+b{
+  border: 1px solid pink;
+}
